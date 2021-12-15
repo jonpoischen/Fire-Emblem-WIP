@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1639516508,
+	"version": 1639601330,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -62,6 +62,7 @@
 		"images/battlebackgrounds-sheet1.png",
 		"images/cursor-sheet0.png",
 		"images/cursor-sheet1.png",
+		"images/9patch.png",
 		"icon-16.png",
 		"icon-32.png",
 		"icon-114.png",
