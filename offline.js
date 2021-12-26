@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1640435529,
+	"version": 1640561561,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -58,6 +58,7 @@
 		"images/tilechecker-sheet0.png",
 		"images/obj_camera-sheet0.png",
 		"images/obj_pinpoint-sheet0.png",
+		"images/healingsquare-sheet0.png",
 		"images/riverbottom-sheet0.png",
 		"images/riverbottomleft-sheet0.png",
 		"images/riverbottomright-sheet0.png",
@@ -81,6 +82,10 @@
 		"icon-128.png",
 		"icon-256.png",
 		"loading-logo.png",
+		"uni.css",
+		"uni0553-webfont.eot",
+		"uni0553-webfont.ttf",
+		"uni0553-webfont.woff",
 		"easystar-0.4.1-custom.js"
 	]
 }
