@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1640698548,
+	"version": 1641135221,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -58,6 +58,8 @@
 		"images/obj_camera-sheet0.png",
 		"images/obj_pinpoint-sheet0.png",
 		"images/healingsquare-sheet0.png",
+		"images/unicorn-sheet0.png",
+		"images/unicorn-sheet1.png",
 		"images/riverbottom-sheet0.png",
 		"images/riverbottomleft-sheet0.png",
 		"images/riverbottomright-sheet0.png",
@@ -73,6 +75,7 @@
 		"images/uimenu.png",
 		"images/cursor-sheet0.png",
 		"images/cursor-sheet1.png",
+		"images/uimenu2.png",
 		"images/battlebackgrounds-sheet0.png",
 		"images/battlebackgrounds-sheet1.png",
 		"images/battlebackgrounds-sheet2.png",
@@ -87,6 +90,7 @@
 		"uni0553-webfont.eot",
 		"uni0553-webfont.ttf",
 		"uni0553-webfont.woff",
+		"translation.lang",
 		"easystar-0.4.1-custom.js"
 	]
 }
