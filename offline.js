@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1641135221,
+	"version": 1641662776,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -58,8 +58,7 @@
 		"images/obj_camera-sheet0.png",
 		"images/obj_pinpoint-sheet0.png",
 		"images/healingsquare-sheet0.png",
-		"images/unicorn-sheet0.png",
-		"images/unicorn-sheet1.png",
+		"images/fader-sheet0.png",
 		"images/riverbottom-sheet0.png",
 		"images/riverbottomleft-sheet0.png",
 		"images/riverbottomright-sheet0.png",
@@ -80,6 +79,11 @@
 		"images/battlebackgrounds-sheet1.png",
 		"images/battlebackgrounds-sheet2.png",
 		"images/water.png",
+		"images/unicorn-sheet0.png",
+		"images/unicorn-sheet1.png",
+		"images/portraitarcher-sheet0.png",
+		"images/secrettile-sheet0.png",
+		"images/town-sheet0.png",
 		"icon-16.png",
 		"icon-32.png",
 		"icon-114.png",
@@ -90,7 +94,8 @@
 		"uni0553-webfont.eot",
 		"uni0553-webfont.ttf",
 		"uni0553-webfont.woff",
-		"translation.lang",
+		"tutorial.lang",
+		"maingame.lang",
 		"easystar-0.4.1-custom.js"
 	]
 }
