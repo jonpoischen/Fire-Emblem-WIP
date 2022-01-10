@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1641759980,
+	"version": 1641842207,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -78,7 +78,7 @@
 		"images/riververtical-sheet0.png",
 		"images/tilemap.png",
 		"images/tilemapabove.png",
-		"images/uimenu.png",
+		"images/uimenu1.png",
 		"images/cursor-sheet0.png",
 		"images/cursor-sheet1.png",
 		"images/uimenu2.png",
