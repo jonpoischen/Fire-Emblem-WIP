@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1642103068,
+	"version": 1642363828,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -76,6 +76,7 @@
 		"images/town-sheet0.png",
 		"images/healthisunit-sheet0.png",
 		"images/healpossibility-sheet0.png",
+		"images/zonetrigger-sheet0.png",
 		"images/riverbottom-sheet0.png",
 		"images/riverbottomleft-sheet0.png",
 		"images/riverbottomright-sheet0.png",
@@ -94,6 +95,7 @@
 		"images/cursor-sheet0.png",
 		"images/cursor-sheet1.png",
 		"images/uimenu2.png",
+		"images/endturnmenu.png",
 		"images/battlebackgrounds-sheet0.png",
 		"images/battlebackgrounds-sheet1.png",
 		"images/battlebackgrounds-sheet2.png",
