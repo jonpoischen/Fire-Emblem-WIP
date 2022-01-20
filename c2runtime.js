@@ -23380,6 +23380,51 @@ cr.behaviors.Flash = function(runtime)
 }());
 ;
 ;
+cr.behaviors.Persist = function(runtime)
+{
+	this.runtime = runtime;
+};
+(function ()
+{
+	var behaviorProto = cr.behaviors.Persist.prototype;
+	behaviorProto.Type = function(behavior, objtype)
+	{
+		this.behavior = behavior;
+		this.objtype = objtype;
+		this.runtime = behavior.runtime;
+	};
+	var behtypeProto = behaviorProto.Type.prototype;
+	behtypeProto.onCreate = function()
+	{
+	};
+	behaviorProto.Instance = function(type, inst)
+	{
+		this.type = type;
+		this.behavior = type.behavior;
+		this.inst = inst;				// associated object instance to modify
+		this.runtime = type.runtime;
+	};
+	var behinstProto = behaviorProto.Instance.prototype;
+	behinstProto.onCreate = function()
+	{
+		this.myProperty = this.properties[0];
+	};
+	behinstProto.onDestroy = function ()
+	{
+	};
+	behinstProto.tick = function ()
+	{
+		var dt = this.runtime.getDt(this.inst);
+	};
+	function Cnds() {};
+	behaviorProto.cnds = new Cnds();
+	function Acts() {};
+	behaviorProto.acts = new Acts();
+	function Exps() {};
+	behaviorProto.exps = new Exps();
+}());
+;
+;
 cr.behaviors.Pin = function(runtime)
 {
 	this.runtime = runtime;
@@ -24102,14 +24147,14 @@ cr.getObjectRefTable = function () { return [
 	cr.plugins_.armaldio_translate,
 	cr.plugins_.AJAX,
 	cr.plugins_.Arr,
+	cr.plugins_.Keyboard,
 	cr.plugins_.Mouse,
 	cr.plugins_.Function,
-	cr.plugins_.Keyboard,
+	cr.plugins_.TiledBg,
 	cr.plugins_.Sprite,
 	cr.plugins_.Text,
-	cr.plugins_.TiledBg,
-	cr.plugins_.Touch,
 	cr.plugins_.Tilemap,
+	cr.plugins_.Touch,
 	cr.behaviors.Flash,
 	cr.behaviors.Bullet,
 	cr.behaviors.destroy,
@@ -24118,6 +24163,7 @@ cr.getObjectRefTable = function () { return [
 	cr.behaviors.Fade,
 	cr.behaviors.scrollto,
 	cr.behaviors.bound,
+	cr.behaviors.Persist,
 	cr.behaviors.EasystarTilemap,
 	cr.behaviors.Rex_MoveTo,
 	cr.system_object.prototype.cnds.IsGroupActive,
@@ -24133,6 +24179,7 @@ cr.getObjectRefTable = function () { return [
 	cr.plugins_.NinePatch.prototype.acts.SetVisible,
 	cr.plugins_.Text.prototype.acts.SetVisible,
 	cr.plugins_.Sprite.prototype.acts.SetVisible,
+	cr.plugins_.Sprite.prototype.acts.SetInstanceVar,
 	cr.plugins_.Text.prototype.acts.SetText,
 	cr.system_object.prototype.cnds.ForEach,
 	cr.plugins_.Sprite.prototype.acts.Destroy,
@@ -24146,7 +24193,6 @@ cr.getObjectRefTable = function () { return [
 	cr.plugins_.Sprite.prototype.exps.Y,
 	cr.plugins_.Sprite.prototype.cnds.IsOverlapping,
 	cr.system_object.prototype.cnds.Every,
-	cr.system_object.prototype.exps.fps,
 	cr.plugins_.Touch.prototype.cnds.IsInTouch,
 	cr.plugins_.Sprite.prototype.cnds.IsAnimPlaying,
 	cr.plugins_.Sprite.prototype.acts.SetPos,
@@ -24176,7 +24222,6 @@ cr.getObjectRefTable = function () { return [
 	cr.behaviors.EasystarTilemap.prototype.acts.BeginDirectionalConditions,
 	cr.behaviors.EasystarTilemap.prototype.acts.AddDirectionalCondition,
 	cr.behaviors.EasystarTilemap.prototype.acts.EndDirectionalConditions,
-	cr.plugins_.Sprite.prototype.acts.SetInstanceVar,
 	cr.plugins_.Sprite.prototype.exps.UID,
 	cr.plugins_.Tilemap.prototype.exps.TileAt,
 	cr.plugins_.Text.prototype.acts.SetFontColor,
@@ -24213,6 +24258,7 @@ cr.getObjectRefTable = function () { return [
 	cr.plugins_.Tilemap.prototype.exps.TileToPositionX,
 	cr.plugins_.Tilemap.prototype.exps.TileToPositionY,
 	cr.system_object.prototype.cnds.PickOverlappingPoint,
+	cr.plugins_.NinePatch.prototype.cnds.IsVisible,
 	cr.plugins_.Sprite.prototype.cnds.OnCollision,
 	cr.plugins_.Text.prototype.cnds.CompareInstanceVar,
 	cr.plugins_.Sprite.prototype.acts.AddInstanceVar,
@@ -24250,6 +24296,7 @@ cr.getObjectRefTable = function () { return [
 	cr.system_object.prototype.cnds.Else,
 	cr.plugins_.Sprite.prototype.exps.Count,
 	cr.plugins_.Arr.prototype.cnds.IsEmpty,
+	cr.plugins_.Sprite.prototype.cnds.PickDistance,
 	cr.plugins_.Sprite.prototype.acts.Spawn,
 	cr.plugins_.Sprite.prototype.acts.SetTowardPosition,
 	cr.plugins_.Sprite.prototype.cnds.OnDestroyed,
