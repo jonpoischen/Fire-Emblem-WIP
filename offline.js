@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1651500252,
+	"version": 1651501003,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -85,9 +85,6 @@
 		"images/enemydemonbattle-sheet2.png",
 		"images/blood-sheet0.png",
 		"images/blood-sheet1.png",
-		"images/blood-sheet2.png",
-		"images/blood2-sheet0.png",
-		"images/blood2-sheet1.png",
 		"images/attackhere-sheet0.png",
 		"images/attackonlythisunit-sheet0.png",
 		"images/attackpossibility-sheet0.png",
