@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1644435902,
+	"version": 1651500252,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -108,6 +108,7 @@
 		"images/darknessforcave.png",
 		"images/lightforcave-sheet0.png",
 		"images/opentreasure-sheet0.png",
+		"images/clouds-sheet0.png",
 		"images/riverbottom-sheet0.png",
 		"images/riverbottomleft-sheet0.png",
 		"images/riverbottomright-sheet0.png",
@@ -133,8 +134,7 @@
 		"images/sand-sheet1.png",
 		"images/sand-sheet2.png",
 		"images/water-sheet0.png",
-		"images/water-sheet1.png",
-		"images/water-sheet2.png",
+		"images/island.png",
 		"images/uimenu1.png",
 		"images/cursor-sheet0.png",
 		"images/cursor-sheet1.png",
